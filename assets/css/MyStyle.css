@@ -158,12 +158,12 @@ main {
     margin-bottom: 4%;
     padding-left: 3%;
     padding-right: 3%;
-     border-radius: 10px;
+    border-radius: 10px;
 }
 
-.project-item img{
+.project-item img {
     border-radius: 10px;
-margin-left: 5%;
+    margin-left: 5%;
 }
 
 /* ============================================================
@@ -253,7 +253,6 @@ aside {
 
     .article-content,
     aside,
-    .AboutMe,
     .AboutMe-img,
     .minhaFoto {
         width: 90%;
@@ -271,6 +270,10 @@ aside {
         /* ou até 1.2rem se quiser mais espaço */
     }
 
+    .project-item h2{
+        margin-top: .8em;
+    }
+
     .article-content {
         padding-top: 10%;
     }
@@ -285,7 +288,7 @@ aside {
     .img-project,
     .img-project2,
     .img-project-certificate img {
-        width: 100%;
+        width: 90%;
         height: auto;
     }
 
@@ -295,7 +298,9 @@ aside {
     }
 
     .AboutMe {
-        padding: 0 10px;
+        padding: 0 10px 0 10px;
+        width: 90%;
+        margin: 0 auto;
     }
 
     .logo-primary {
@@ -318,8 +323,12 @@ aside {
         padding: 5%;
     }
 
-    .social-icons a{
+    .social-icons a {
         font-size: 1.6rem;
+    }
+
+    .containerThree h2 {
+        padding: 3%;
     }
 
     #navbar-style {
