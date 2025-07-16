@@ -50,6 +50,7 @@ main {
     text-align: center;
     padding: 1%;
     font-size: 2rem;
+    text-decoration: none;
 }
 
 .logo-secondary {
@@ -68,6 +69,11 @@ main {
 .link-personalizado:hover {
     color: #33ccff;
     transform: scale(1.1);
+}
+
+#navbar-style {
+    background-color: rgba(33, 37, 41, 0.8);
+    backdrop-filter: blur(5px);
 }
 
 /* ============================================================
@@ -325,6 +331,11 @@ aside {
     .img-code {
         width: 100%;
         padding: 5%;
+    }
+
+    #navbar-style {
+        background-color: rgba(33, 37, 41, 0.8);
+        backdrop-filter: blur(5px);
     }
 
     #carouselCertificates img {
