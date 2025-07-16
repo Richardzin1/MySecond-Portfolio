@@ -37,6 +37,10 @@ main {
     font-size: 3.2rem;
 }
 
+.project-item h2 {
+    padding: 1rem;
+}
+
 /* ============================================================
    NAVBAR & LOGO
 ============================================================ */
@@ -142,26 +146,24 @@ main {
     gap: 5%;
 }
 
-.containerThree {
-    margin-top: 10%;
-}
-
 .containerThree h2,
 .containerFour h2 {
     text-align: center;
-    margin-top: 10%;
 }
 
 .container-project {
     display: flex;
     gap: 4%;
-    justify-content: center;
     margin-top: 4%;
-    padding: 5%;
+    margin-bottom: 4%;
+    padding-left: 3%;
+    padding-right: 3%;
+     border-radius: 10px;
 }
 
-.container-project img {
+.project-item img{
     border-radius: 10px;
+margin-left: 5%;
 }
 
 /* ============================================================
