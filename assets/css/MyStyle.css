@@ -11,10 +11,6 @@
 }
 
 body {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-    box-sizing: border-box;
     background-color: black;
     color: white;
 }
@@ -27,8 +23,9 @@ main {
    TIPOGRAFIA / TÍTULOS
 ============================================================ */
 .h1-text {
-    padding-left: 4%;
+    text-align: center;
     padding-top: 25%;
+    padding-left: 3%;
 }
 
 .h2-text {
@@ -37,15 +34,21 @@ main {
 
 .h1-text,
 .h2-text {
-    font-size: 4rem;
+    font-size: 3.2rem;
 }
 
 /* ============================================================
    NAVBAR & LOGO
 ============================================================ */
 .nav-center-custom ul {
-    display: flex;
-    gap: 80%;
+    display: flex !important;
+    flex-direction: row;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
 }
 
 .logo-primary {
@@ -94,23 +97,25 @@ main {
     border-radius: 50%;
 }
 
-.img-certificate {
-    width: 500px;
-    height: 500px;
-    border-radius: 10px;
-}
 
 .img-project,
 .img-project2 {
-    width: 500px;
-    height: 300px;
-    border-radius: 10px;
-    margin-bottom: 10%;
+    width: 90%;
+    max-width: 500px;
+    height: 214.767px;
+}
+
+.img-certificate {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
 }
 
 .img-code {
-    width: 500px;
-    height: 400px;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+
 }
 
 .img-project-certificate {
@@ -129,11 +134,10 @@ main {
 ============================================================ */
 .containerOne {
     display: flex;
-    gap: 10%;
+    gap: 5%;
 }
 
 .containerTwo {
-    margin-top: 10%;
     display: flex;
     gap: 5%;
 }
@@ -150,9 +154,10 @@ main {
 
 .container-project {
     display: flex;
-    gap: 8%;
+    gap: 4%;
     justify-content: center;
     margin-top: 4%;
+    padding: 5%;
 }
 
 .container-project img {
@@ -167,8 +172,7 @@ main {
    // COMEÇO ELEMENTOS DE CONTEÚDO
 ============================================================ */
 .article-content {
-    width: 50%;
-    margin-left: 5%;
+    width: 100%;
 }
 
 aside {
@@ -177,15 +181,17 @@ aside {
 }
 
 .AboutMe {
-    padding: 3% 5% 0% 5%;
+    width: 70%;
+    padding-right: 7%;
+    margin-top: 10%;
 }
 
 .AboutMe-img {
-    margin-left: 10%;
+    margin-top: 5%;
 }
 
 .project-item {
-    max-width: 500px;
+    max-width: 600px;
 }
 
 /* ============================================================
@@ -193,42 +199,6 @@ aside {
 ============================================================ */
 
 /* ============================================================
-   // COMEÇO MODAL
-============================================================ */
-.modal-bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.8);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-}
-
-.modal-item {
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    max-width: 700px;
-    width: 100%;
-    position: relative;
-}
-
-.close-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-}
-
-/* ============================================================
-   // FIM MODAL
-============================================================ */
 
 /* ============================================================
    // COMEÇO SOCIAL ICONS
@@ -283,11 +253,20 @@ aside {
     aside,
     .AboutMe,
     .AboutMe-img,
-    .project-item,
     .minhaFoto {
         width: 90%;
         margin: 0 auto;
         text-align: center;
+    }
+
+    .project-item {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .project-item li {
+        padding-top: 0.5rem;
+        /* ou até 1.2rem se quiser mais espaço */
     }
 
     .article-content {
@@ -296,7 +275,7 @@ aside {
 
     .h1-text,
     .h2-text {
-        font-size: 2.2rem;
+        font-size: 1.6rem;
         padding: 0;
     }
 
@@ -335,6 +314,10 @@ aside {
     .img-code {
         width: 100%;
         padding: 5%;
+    }
+
+    .social-icons a{
+        font-size: 1.6rem;
     }
 
     #navbar-style {
