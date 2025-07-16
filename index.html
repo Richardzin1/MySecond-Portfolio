@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/MyStyle.css">
+    <title>Portifólio Richard Semo</title>
+</head>
+
+<body>
+    <header id="home">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top px-3">
+            <a class="logo-primary" href="#">RS<span class="logo-secondary"> DevWorks</span></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Links centralizados e levemente à direita -->
+            <div class="collapse navbar-collapse justify-content-center nav-center-custom" id="navbarContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link link-personalizado" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-personalizado" href="#projetos">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-personalizado" href="#certificate">certificate</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <div class="containerOne">
+            <article class="article-content">
+                <h1 class="h1-text">Hi, I'M <span>Richard Semo</span></h1>
+                <h2 class="h2-text">Backend developer</h2>
+                <p class="social-icons">
+                    <a href="https://www.instagram.com/richard_semoo/" target="_blank"><i
+                            class="bi bi-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/richard-semo-4362b3356/" target="_blank"><i
+                            class="bi bi-linkedin"></i></a>
+                    <a href="https://github.com/Richardzin1" target="_blank"><i class="bi bi-github"></i></a>
+                    <a href="assets/CV/Documento (1) (3).pdf" download target="_blank"><i class="bi bi-file-earmark-person"></i></i></a>
+                </p>
+            </article>
+            <aside>
+                <img class="minhaFoto" src="image/minhaFoto2.png" alt="">
+            </aside>
+        </div>
+
+        <section class="containerTwo">
+            <div class="AboutMe-img">
+                <img class="img-code" src="image/imgCode.jpg" alt="">
+            </div>
+            <div class="AboutMe">
+                <h2>About Me</h2>
+                <p>
+                    I'm a backend developer with a strong focus on transitioning to fullstack, always seeking new
+                    challenges. My current skillset includes Laravel, PHP, JavaScript, Docker, Bootstrap 5, and SQL
+                    databases
+                </p>
+                <p>
+                    My passion for programming sparked from the world of gaming and a deep curiosity about how things
+                    work behind the scenes. Beyond coding, I'm a big fan of cats, anime, and general geek culture.
+                    Currently, I'm completing my degree in Internet Systems at Fatec São Roque/SP and actively looking
+                    for internship opportunities to apply my knowledge.
+                </p>
+            </div>
+        </section>
+
+        <section id="projetos" class="containerThree">
+            <h2>My Project</h2>
+            <div class="container-project">
+                <div class="project-item">
+                    <img class="img-project" src="image/Project-admin-lte.png" alt="projetc AdminLTE">
+                    <h2>Project laravel</h2>
+                    <ul>
+                        <li>Built using the AdminLTE dashboard template</li>
+                        <li>Integrated with a MySQL relational database</li>
+                        <li>User authentication system with login and registration</li>
+                        <li>Complete user CRUD (Create, Read, Update, Delete) operations</li>
+                        <li>Access control using policies and permissions</li>
+                        <li>Organized structure following the MVC (Model-View-Controller) pattern</li>
+                        <li>Responsive design with Bootstrap framework</li>
+                    </ul>
+                </div>
+
+                <div class="project-item">
+                    <img class="img-project2" src="image/Localstorage.png" alt="">
+                    <h2>CRUD LOCAL STORAGE</h2>
+                    <ul>
+                        <li>Full CRUD (Create, Read, Update, Delete) functionality using localStorage as a
+                            database</li>
+                        <li>Local in-browser API logic supporting HTTP methods: GET, POST, PUT, and DELETE</li>
+                        <li>AJAX integration for sending and retrieving data from the local API logic</li>
+                        <li>Dynamic and responsive interface built with pure HTML, CSS, and JavaScript</li>
+                        <li>Persistent data storage across browser sessions using localStorage</li>
+                        <li>Modular code structure for easier maintenance and reusability</li>
+                    </ul>
+
+                </div>
+
+                <div class="project-item">
+                    <img class="img-project" src="image/projetoFatecon.png" alt="">
+                    <h2>FateconHQs Project</h2>
+                    <ul>
+                        <li>Project developed during college to promote a comic book andartist event</li>
+                        <li>Built using core web technologies: HTML, PHP, CSS, and Bootstrap</li>
+                        <li>Responsive layout with Bootstrap for mobile and desktop compatibility</li>
+                        <li>Static and dynamic content integration using PHP and server-side rendering</li>
+                        <li>Clean and organized structure following semantic HTML practices</li>
+                        <li>Designed to showcase event details, featured artists, and interactive content</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="certificate" class="containerFour">
+            <h2>My certificate</h2>
+            <div class="img-project-certificate">
+                <!--d-none d-md-flex "colocar dentro do class="img-project-certificate" Caso for usar o carrosel-->
+                <img class="img-certificate" src="image/certificadoFreeCodeCamp.png" alt="certificadoFreeCodeCamp">
+                <!-- <img src="https://placehold.net/400x400.png" alt="">
+                <img src="https://placehold.net/400x400.png" alt=""> -->
+            </div>
+        </section>
+
+
+        <!-- carrosel caso for usar -->
+        <!-- <div id="carouselCertificates" class="carousel slide d-md-none mt-4" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="image/certificadoFreeCodeCamp.png" class="d-block w-100 rounded" alt="Certificado 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://placehold.net/400x400.png" class="d-block w-100 rounded" alt="Certificado 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://placehold.net/400x400.png" class="d-block w-100 rounded" alt="Certificado 3">
+                </div>
+            </div> -->
+        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselCertificates"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselCertificates"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button> -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Richard Semo. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

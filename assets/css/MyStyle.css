@@ -1,0 +1,334 @@
+@charset "UTF-8";
+
+/* ============================================================
+   RESET & GERAL
+============================================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Code', monospace;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+main {
+    padding-top: 70px;
+}
+
+/* ============================================================
+   TIPOGRAFIA / TÍTULOS
+============================================================ */
+.h1-text {
+    padding-left: 4%;
+    padding-top: 25%;
+}
+
+.h2-text {
+    text-align: center;
+}
+
+.h1-text,
+.h2-text {
+    font-size: 4rem;
+}
+
+/* ============================================================
+   NAVBAR & LOGO
+============================================================ */
+.nav-center-custom ul {
+    display: flex;
+    gap: 80%;
+}
+
+.logo-primary {
+    font-family: 'Courier New', monospace;
+    color: #33ccff;
+    text-align: center;
+    padding: 1%;
+    font-size: 2rem;
+}
+
+.logo-secondary {
+    color: #666;
+    font-weight: bold;
+}
+
+.link-personalizado {
+    color: #666;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.link-personalizado:hover {
+    color: #33ccff;
+    transform: scale(1.1);
+}
+
+/* ============================================================
+   // COMEÇO IMG GERAL
+============================================================ */
+.img-navbar-logo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.minhaFoto {
+    filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.6));
+    border-radius: 50%;
+}
+
+.img-certificate {
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.img-project,
+.img-project2 {
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    margin-bottom: 10%;
+}
+
+.img-code {
+    width: 500px;
+    height: 400px;
+}
+
+.img-project-certificate {
+    display: flex;
+    gap: 8%;
+    justify-content: center;
+    margin-top: 4%;
+}
+
+/* ============================================================
+   // FIM IMG GERAL
+============================================================ */
+
+/* ============================================================
+   // COMEÇO CONTAINERS E LAYOUT PRINCIPAL
+============================================================ */
+.containerOne {
+    display: flex;
+    gap: 10%;
+}
+
+.containerTwo {
+    margin-top: 10%;
+    display: flex;
+    gap: 5%;
+}
+
+.containerThree {
+    margin-top: 10%;
+}
+
+.containerThree h2,
+.containerFour h2 {
+    text-align: center;
+    margin-top: 10%;
+}
+
+.container-project {
+    display: flex;
+    gap: 8%;
+    justify-content: center;
+    margin-top: 4%;
+}
+
+.container-project img {
+    border-radius: 10px;
+}
+
+/* ============================================================
+   // FIM CONTAINERS
+============================================================ */
+
+/* ============================================================
+   // COMEÇO ELEMENTOS DE CONTEÚDO
+============================================================ */
+.article-content {
+    width: 50%;
+    margin-left: 5%;
+}
+
+aside {
+    margin-top: 5%;
+    width: 50%;
+}
+
+.AboutMe {
+    padding: 3% 5% 0% 5%;
+}
+
+.AboutMe-img {
+    margin-left: 10%;
+}
+
+.project-item {
+    max-width: 500px;
+}
+
+/* ============================================================
+   // FIM ELEMENTOS DE CONTEÚDO
+============================================================ */
+
+/* ============================================================
+   // COMEÇO MODAL
+============================================================ */
+.modal-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 700px;
+    width: 100%;
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+/* ============================================================
+   // FIM MODAL
+============================================================ */
+
+/* ============================================================
+   // COMEÇO SOCIAL ICONS
+============================================================ */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    padding-top: 5%;
+}
+
+.social-icons a {
+    color: #aaa;
+    font-size: 2rem;
+    margin: 0 10px;
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block;
+}
+
+.social-icons a:hover {
+    color: #33ccff;
+    transform: scale(1.2);
+}
+
+/* ============================================================
+   // FIM SOCIAL ICONS
+============================================================ */
+
+/* ============================================================
+   FOOTER
+============================================================ */
+.footer-content {
+    text-align: center;
+    padding-top: 10%;
+}
+
+/* ============================================================
+   RESPONSIVO PARA TELAS MENORES
+============================================================ */
+@media (max-width: 768px) {
+
+    .containerOne,
+    .containerTwo,
+    .container-project,
+    .img-project-certificate {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .article-content,
+    aside,
+    .AboutMe,
+    .AboutMe-img,
+    .project-item,
+    .minhaFoto {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .article-content {
+        padding-top: 10%;
+    }
+
+    .h1-text,
+    .h2-text {
+        font-size: 2.2rem;
+        padding: 0;
+    }
+
+    .container-project img,
+    .img-project,
+    .img-project2,
+    .img-project-certificate img {
+        width: 100%;
+        height: auto;
+    }
+
+    .nav-center-custom ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .AboutMe {
+        padding: 0 10px;
+    }
+
+    .logo-primary {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .footer-content {
+        font-size: 0.9rem;
+        padding: 30px 10px;
+    }
+
+    .img-certificate {
+        width: 100%;
+        padding: 3%;
+    }
+
+    .img-code {
+        width: 100%;
+        padding: 5%;
+    }
+
+    #carouselCertificates img {
+        max-height: 400px;
+        object-fit: contain;
+    }
+}
